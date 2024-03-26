@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+}
+
+/* color Variables */
+
+:root {
+    --white: #fff --black:#000;
+}
+
+.main {
+    min-height: 80vh;
+
+}
+
+
+/* FontSize Clsses */
+
+.Fs1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.Fs2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.Fs3 {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+.Fs4 {
+    font-weight: bolder;
+}
+
+.w-4 {
+    width: 140px;
+}
+
+.w-3 {
+    font-size: 20px;
+}
+
+/* Border Classes */
+
+.B1 {
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+.B1_r {
+    border-right: 2px solid #f2f2f2;
+}
+
+@media only screen and (max-width:992px) {
+    .B1_r {
+        border: 2px solid #f2f2f2;
+    }
+}
+
+/* Table css */
+
+.custom-thead {
+    background-color: #F3EAD8;
+    border: none !important;
+}
+
+table {
+    border-radius: 10px;
+}
+
+table th,
+table td {
+    border: 2px solid #DFDFDF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F7F7F7;
+}
