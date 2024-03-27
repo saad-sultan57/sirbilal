@@ -66,20 +66,61 @@ body {
 
 /* Table css */
 
+.table>thead {
+    vertical-align: middle;
+}
+
 .custom-thead {
     background-color: #F3EAD8;
     border: none !important;
 }
 
-table {
+.custom-thead th span {
+    display: block;
+    font-weight: 400;
+}
+
+table.table thead th:last-child {
+    border-right: 0px;
+}
+
+.custom-thead th:last-child {
+    border-right: 0px;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #dadada;
+}
+
+table.table {
     border-radius: 10px;
 }
 
-table th,
-table td {
-    border: 2px solid #DFDFDF;
+table.table th,
+table.table td {
+    border: 1.5px solid #dadada;
+    border-left: 0px;
+    padding: 12px 10px;
 }
 
-tbody tr:nth-child(even) {
+table.table tbody tr:nth-child(even) {
     background-color: #F7F7F7;
+}
+
+table.table tbody tr td:last-child,
+table.table tbody tr th:last-child {
+    border-right: 0px;
+}
+
+table.table tbody tr:last-child td,
+table.table tbody tr:last-child th {
+    border-bottom: 0px;
+}
+
+.table.table thead:first-child tr:first-child th {
+    border-top: 0px;
+}
+
+.custom-b1 {
+    border-right: 0px;
 }
